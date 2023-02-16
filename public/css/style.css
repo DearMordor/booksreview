@@ -1,0 +1,414 @@
+/* -------------------- Styles for all html files -------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap");
+
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Fira Mono", sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  /* position: fixed; */
+  background-color: var(--secondary-color);
+}
+
+/* -------------------- Styles for index.html-------------------- */
+
+main {
+  display: flex;
+  /* display: table; */
+  flex-wrap: wrap;
+  text-align: center;
+  /* width: 100%; */
+}
+
+main a {
+  text-decoration: none;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  float: left;
+}
+
+.book .book-image {
+  flex: 4;
+  background-size: 100%; 
+}
+
+.book img {
+  width: 100%;
+  /* width: 315;
+  height: 496; */
+  overflow: hidden;
+  /* max-height: 80%; */
+}
+
+.book-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+  flex: 1;
+  /* height: 20vw; */
+}
+
+.book-info h3 {
+  margin-top: 0;
+  flex: 4;
+}
+
+.book-info span {
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.book-info span.green {
+  color: lightgreen;
+}
+
+.book-info span.orange {
+  color: orange;
+}
+
+.book-info span.red {
+  color: red;
+}
+
+#logo {
+  text-align: center;
+  padding: 10px 12px;
+  color: #7378c5;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/*TODO ACTIVE WHEN YOU CURSOS*/
+.login-button {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #7378c5;
+  cursor: pointer;
+}
+
+
+/* -------------------- Styles for login.html and register.html-------------------- */
+
+#login-main {
+  background-color: var(--primary-color);
+  color: #7378c5;
+  font-family: "Fira Mono", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: var(--secondary-color);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.container span {
+  color: red;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: var(--primary-color);
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  color: #7378c5;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+  color: #7378c5;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input,
+.form-control textarea {
+  background-color: transparent;
+  border: #7378c5 solid;
+  /* border-bottom: 2px #7378c5 solid; */
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #7378c5;
+}
+
+
+.gender-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+  text-align: center;
+}
+
+.gender-control input {
+  background-color: transparent;
+  border: #7378c5 solid;
+  /* border-bottom: 2px #7378c5 solid; */
+  /* width: 100%; */
+  padding: 15px 0;
+  font-size: 18px;
+  color: #7378c5;
+}
+
+/* -------------------- Styles for book.html -------------------- */
+
+.single-book {
+  display: flex;
+  /*TODO adaptive for mobile devices*/
+  /* flex-wrap: wrap; */
+  overflow: hidden;
+  position: relative;
+  /* justify-content: space-between; */
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  /* margin: 0; */
+  padding: 30px;
+  color: #eeee;
+  position: relative;
+}
+
+.single-book-photo {
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+.single-book-info {
+  /* width: 60%; */
+  margin-left: 20px;
+  float: left;
+}
+
+.single-book-info span {
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.single-book-info span.green {
+  color: lightgreen;
+}
+
+.single-book-info span.orange {
+  color: orange;
+}
+
+.single-book-info span.red {
+  color: red;
+}
+
+.single-book-info p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.single-book-info h1 {
+  margin-top: 0;
+  line-height: 24px;
+  font-size: 18px;
+  display: inline;
+}
+
+.single-book-info h3 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.reviews {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 30px;
+  color: #eeee;
+}
+
+.reviews h3 {
+  text-align: center;
+}
+
+.reviews p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.review {
+  margin: 1rem;
+}
+
+.review-name {
+  text-decoration: solid;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.review-date {
+  color: #767579;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* -------------------- Styles for app\views\pages\show.php -------------------- */
+
+.reviews .review-form {
+  margin: 1rem;
+  text-align: center;
+}
+
+/* -------------------- Styles for app\views\pages\addReview.php -------------------- */
+
+textarea {
+  background-color: transparent;
+  border: solid #7378c5;
+  /* border-radius: 50px; */
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #eeee;
+}
+
+textarea::placeholder {
+  color: #7378c5;
+}
+
+textarea::focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+/*---------------------------- Styles for paginations -------------------------*/
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: #eeee;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* -------------------------- Styles for aboutUs.html */
+
+.about-us {
+  /* display: flex; */
+  /* position: relative; */
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 30px;
+  color: #eeee;
+  position: left;
+  text-align: left;
+}
+
+/* ------------------------- Styles for footer.php */
+.footer-navbar {
+  text-align: center;
+  padding: 10px 12px;
+  color: #7378c5;
+  font-size: 24px;
+  text-decoration: none;
+}
